@@ -3,8 +3,8 @@ package amb.CalculateDivisors;
 public class Node {
 	
 	private int number;
-	private int child1;
-	private int child2;
+	private Node child1;
+	private Node child2;
 	
 	public Node() {	
 	}
@@ -21,19 +21,19 @@ public class Node {
 		this.number = number;
 	}
 
-	public int getChild1() {
+	public Node getChild1() {
 		return child1;
 	}
 
-	public void setChild1(int child1) {
+	public void setChild1(Node child1) {
 		this.child1 = child1;
 	}
 
-	public int getChild2() {
+	public Node getChild2() {
 		return child2;
 	}
 
-	public void setChild2(int child2) {
+	public void setChild2(Node child2) {
 		this.child2 = child2;
 	}
 	

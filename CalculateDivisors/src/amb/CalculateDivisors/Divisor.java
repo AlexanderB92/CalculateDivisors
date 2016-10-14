@@ -19,8 +19,6 @@ public class Divisor {
 		}
 		return true;
 		
-		
-		
 	}
 	
 
