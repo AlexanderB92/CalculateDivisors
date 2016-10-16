@@ -10,6 +10,9 @@ public class Divisor {
 	private double number;
 
 	public Divisor(double subject) {
+		if(subject == 0) {
+			System.out.println("WARNING: 0 has no divisors - Proceed with caution");
+		}
 		this.number = subject;
 	}
 	
