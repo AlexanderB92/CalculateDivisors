@@ -1,2 +1,2 @@
 # CalculateDivisors
-A simple mathematical program to find divisors to a given number
+A simple mathematical program that finds number of divisors to a given number efficiently. Can handle very, very big numbers. 
