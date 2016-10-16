@@ -4,7 +4,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		Divisor d = new Divisor(123);
+		Divisor d = new Divisor(100);
 		
 		
 	}

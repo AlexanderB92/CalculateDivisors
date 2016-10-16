@@ -16,17 +16,20 @@ public class Divisor {
 	public int numberOfDivisors() {
 		
 		int result = 0;
-		double calculation;
 		
 		Map<Double, Integer> frequencyMap = createFrequencyMap();
 		
 		for(Map.Entry<Double, Integer> entry : frequencyMap.entrySet()) {
-			
+			if(result == 0) {
+				result = entry.getValue() + 1;
+			}
+			else {
+				result = result * entry.getValue() + 1;
+			}
 		}
 		
 		return result;
-		
-		
+			
 	}
 	
 	public Map<Double, Integer> createFrequencyMap() {
