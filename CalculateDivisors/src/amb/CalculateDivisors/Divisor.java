@@ -1,6 +1,9 @@
 package amb.CalculateDivisors;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
 
 public class Divisor {
 
@@ -9,10 +12,47 @@ public class Divisor {
 	public Divisor(double subject) {
 		this.number = subject;
 	}
-
-	public ArrayList<Double> findPrimeFactors(double n) {
+	
+	public int numberOfDivisors() {
 		
-		double number = n;
+		int result = 0;
+		double calculation;
+		
+		Map<Double, Integer> frequencyMap = createFrequencyMap();
+		
+		for(Map.Entry<Double, Integer> entry : frequencyMap.entrySet()) {
+			
+		}
+		
+		return result;
+		
+		
+	}
+	
+	public Map<Double, Integer> createFrequencyMap() {
+		
+		ArrayList<Double> primeFactors = findPrimeFactors();
+		
+		Map<Double, Integer> frequencyMap = new HashMap<Double, Integer>();
+		
+		for(Double n : primeFactors) {
+			Integer freq = frequencyMap.get(n);
+			
+			if(freq == null) {
+				frequencyMap.put(n, 1);
+			}
+			else {
+				frequencyMap.put(n, freq++);
+			}
+		}
+		
+		return frequencyMap;
+			
+	}
+
+	public ArrayList<Double> findPrimeFactors() {
+		
+		double number = this.number;
 		ArrayList<Double> result = new ArrayList<Double>();
 
 		while(number%2 == 0) {
@@ -28,7 +68,7 @@ public class Divisor {
 		}
 		
 		if (number > 2) {
-			result.add(n);
+			result.add(number);
 		}
 		
 		return result;
