@@ -24,7 +24,7 @@ public class Divisor {
 				result = entry.getValue() + 1;
 			}
 			else {
-				result = result * entry.getValue() + 1;
+				result = result * (entry.getValue() + 1);
 			}
 		}
 		
@@ -45,7 +45,7 @@ public class Divisor {
 				frequencyMap.put(n, 1);
 			}
 			else {
-				frequencyMap.put(n, freq++);
+				frequencyMap.put(n, freq += 1);
 			}
 		}
 		
