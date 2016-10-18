@@ -81,8 +81,8 @@ public class Divisor {
 	 * be done without remainder. Then a for-loop checks possible divisions of
 	 * primes by starting from 3 and adding 2 at each iteration with the square
 	 * root of the number being the limit. This is because the smallest prime
-	 * factor of a number is always <sqrt(number). The last step adds the number
-	 * itself.
+	 * factor of a composite (non-prime, not 1) number is always <sqrt(number).
+	 * The last step adds the number itself.
 	 * 
 	 * @return ArrayList of prime factorization of the subject number
 	 */
