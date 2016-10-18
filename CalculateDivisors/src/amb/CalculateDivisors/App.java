@@ -7,7 +7,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		Divisor d = new Divisor(720720);
+		Divisor d = new Divisor(455);
 		
 //		ArrayList<Double> test = d.findPrimeFactors();
 //		
@@ -22,6 +22,7 @@ public class App {
 //		}
 		
 		System.out.println(d.numberOfDivisors());
+		
 		
 	}
 
